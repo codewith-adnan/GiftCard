@@ -25,7 +25,7 @@ const DeleteCategory: React.FC<DeleteCategoryProps> = ({ isOpen, onClose, onDele
     <Overlay>
       <ModalWrapper>
         <ModalHeader>
-          <h2>Delete</h2>
+          <h2>Delete </h2>
           <CloseButton onClick={onClose}>&times;</CloseButton>
         </ModalHeader>
         <ModalBody>
