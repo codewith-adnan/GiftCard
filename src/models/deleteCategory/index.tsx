@@ -31,6 +31,8 @@ const DeleteCategory: React.FC<DeleteCategoryProps> = ({ isOpen, onClose, onDele
         <ModalBody>
           <img src={deleteImg} alt="Delete illustration" />
           <p>Are you sure you want to delete this?</p>
+            <p>Wellcom to feature branch</p>
+
           <ButtonGroup>
             <CancelButton onClick={onClose}>Cancel</CancelButton>
             <DeleteButton onClick={onDelete}>Delete</DeleteButton>
