@@ -35,11 +35,7 @@ export const ImageSection = styled.div`
     flex-shrink: 0;
   }
 
-  @media (max-width: ${breakpoints.sm}) {
-    height: 30vh;
-  }
-
-  @media (max-width: ${breakpoints.xs}) {
+  @media (max-width: ${breakpoints.md}) {
     display: none;
   }
 `;

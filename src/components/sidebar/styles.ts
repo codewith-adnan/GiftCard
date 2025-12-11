@@ -7,7 +7,6 @@ interface SidebarWrapperProps {
 export const SidebarWrapper = styled.aside<SidebarWrapperProps>`
   position: fixed;
   top: 0;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-180px")};
   width: 200px;
   height: 100vh;
   background-color: #0b0033;
@@ -17,11 +16,14 @@ export const SidebarWrapper = styled.aside<SidebarWrapperProps>`
   z-index: 1100;
   transition: left 0.3s ease;
 
-  @media (max-width: 320px) {
+  @media (min-width: 701px) {
+    left: 0;
+  }
+
+  @media (max-width: 700px) {
     padding-top: 2rem;
     width: 170px;
-    
-
+    left: ${({ isOpen }) => (isOpen ? "0" : "-170px")};
   }
 `;
 
@@ -35,20 +37,6 @@ export const Overlay = styled.div`
   z-index: 1000;
 `;
 
-export const ToggleButton = styled.button`
-  position: fixed;
-  top: 1rem;
-  left: 0.25rem;
-  background: transparent;
-  border: none;
-  color: white;
-  z-index: 1200;
-  cursor: pointer;
-
-  @media (min-width: 321px) {
-    display: none;
-  }
-`;
 
 export const LogoSection = styled.div`
   display: flex;
@@ -115,9 +103,8 @@ export const NavLink = styled.a<NavLinkProps>`
     transition: color 300ms ease-out;
   }
 
-  @media (max-width:320px) {
+  @media (max-width: 768px) {
     width: 135px;
-    
   }
 `;
 

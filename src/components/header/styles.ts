@@ -4,33 +4,85 @@ import { FaBell, FaChevronDown } from "react-icons/fa";
 export const HeaderWrapper = styled.div`
   position: fixed;
   top: 0;
-  left: 220px;
+  left: 0;
   right: 0;
   height: 70px;
   background-color: #fff;
   z-index: 999;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 1rem;
   padding: 0 1.5rem;
 
-  @media (max-width: 768px) {
+  @media (min-width: 701px) {
     left: 200px;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 700px) {
     padding: 0 1rem;
   }
 
   @media (max-width: 480px) {
-    left: 0;
     padding: 0 0.5rem;
-    justify-content: center;
   }
 
   @media (max-width: 320px) {
-    left: 0;
     height: 70px;
     gap: 1rem;
   }
+`;
+
+export const BurgerButton = styled.button`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1300;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 701px) {
+    display: none;
+  }
+`;
+
+interface BurgerLineProps {
+  size: 'small' | 'medium' | 'large';
+}
+
+export const BurgerLine = styled.span<BurgerLineProps>`
+  height: 3px;
+  background-color: #0b0033;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  width: ${({ size }) => {
+    switch (size) {
+      case 'small':
+        return '14px';
+      case 'medium':
+        return '21px';
+      case 'large':
+        return '28px';
+      default:
+        return '28px';
+    }
+  }};
+`;
+
+export const RightSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
 `;
 
 export const NotificationButton = styled.button`

@@ -11,7 +11,6 @@ import {
   NavLabel,
   NavList,
   Overlay,
-  ToggleButton,
 } from "./styles";
 
 import {
@@ -20,8 +19,6 @@ import {
   FaUser,
   FaShoppingBag,
   FaGift,
-  FaBars,
-  FaTimes,
 } from "react-icons/fa";
 
 import Logo from "../../assets/images/sidebar/Logo.png";
@@ -35,7 +32,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const [activeLink, setActiveLink] = useState("Dashboard");
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 320);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
   const navigate = useNavigate();
 
   const handleClick = (label: string, path: string) => {
@@ -46,9 +43,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, setIsSidebarOpen }) =>
 
   useEffect(() => {
     const handleResize = () => {
-      const isNowMobile = window.innerWidth <= 320;
+      const isNowMobile = window.innerWidth <= 700;
       setIsMobile(isNowMobile);
-      if (!isNowMobile) setIsSidebarOpen(true); // Sidebar should stay open on desktop
+      if (!isNowMobile) {
+        setIsSidebarOpen(true); // Sidebar should stay open on desktop
+      } else {
+        setIsSidebarOpen(false); // Hide sidebar on mobile by default
+      }
     };
 
     window.addEventListener("resize", handleResize);
@@ -58,14 +59,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, setIsSidebarOpen }) =>
 
   return (
     <>
-      {isMobile && (
-        <>
-          <ToggleButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-            {isSidebarOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
-          </ToggleButton>
-          {isSidebarOpen && <Overlay onClick={() => setIsSidebarOpen(false)} />}
-        </>
-      )}
+      {isMobile && isSidebarOpen && <Overlay onClick={() => setIsSidebarOpen(false)} />}
 
       <SidebarWrapper isOpen={isSidebarOpen || !isMobile}>
         <LogoSection>

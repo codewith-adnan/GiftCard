@@ -10,7 +10,7 @@ import {
   DeleteButton,
 } from './styles';
 
-import deleteImg from '../../assets/images/header/dell.png'; 
+import deleteImg from '../../assets/images/header/dell.png';
 
 interface DeleteCategoryProps {
   isOpen: boolean;
@@ -31,6 +31,8 @@ const DeleteCategory: React.FC<DeleteCategoryProps> = ({ isOpen, onClose, onDele
         <ModalBody>
           <img src={deleteImg} alt="Delete illustration" />
           <p>Are you sure you want to delete this?</p>
+
+
           <ButtonGroup>
             <CancelButton onClick={onClose}>Cancel</CancelButton>
             <DeleteButton onClick={onDelete}>Delete</DeleteButton>

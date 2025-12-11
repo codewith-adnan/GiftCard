@@ -5,11 +5,11 @@ import Header from "../components/header";
 import { LayoutWrapper, ContentArea } from "./styles";
 
 const MainLayouts: React.FC = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 320);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 700);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 320) {
+      if (window.innerWidth <= 700) {
         setIsSidebarOpen(false);
       } else {
         setIsSidebarOpen(true);
@@ -24,7 +24,7 @@ const MainLayouts: React.FC = () => {
   return (
     <LayoutWrapper>
       <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
-      <Header />
+      <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
       <ContentArea isSidebarOpen={isSidebarOpen}>
         <Outlet />
       </ContentArea>
