@@ -23,7 +23,7 @@ export const SidebarWrapper = styled.aside<SidebarWrapperProps>`
   @media (max-width: 700px) {
     padding-top: 2rem;
     width: 170px;
-    left: ${({ isOpen }) => (isOpen ? "0" : "-200px")};
+    left: ${({ isOpen }) => (isOpen ? "0" : "-250px")};
   }
 `;
 

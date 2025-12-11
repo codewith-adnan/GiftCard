@@ -6,7 +6,9 @@ interface ContentAreaProps {
 
 export const LayoutWrapper = styled.div`
   position: relative;
-  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 `;
 
 export const ContentArea = styled.div<ContentAreaProps>`
