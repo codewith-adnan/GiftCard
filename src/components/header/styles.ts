@@ -22,6 +22,7 @@ export const HeaderWrapper = styled.div`
 
   @media (max-width: 700px) {
     padding: 0 1rem;
+    left: 0;
   }
 
   @media (max-width: 480px) {
@@ -30,7 +31,7 @@ export const HeaderWrapper = styled.div`
 
   @media (max-width: 320px) {
     height: 70px;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 `;
 

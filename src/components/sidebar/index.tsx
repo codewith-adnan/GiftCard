@@ -61,7 +61,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, setIsSidebarOpen }) =>
     <>
       {isMobile && isSidebarOpen && <Overlay onClick={() => setIsSidebarOpen(false)} />}
 
-      <SidebarWrapper isOpen={isSidebarOpen || !isMobile}>
+      <SidebarWrapper isOpen={isMobile ? isSidebarOpen : true}>
         <LogoSection>
           <LogoImage src={Logo} alt="Logo" />
           <LogoTitle>
