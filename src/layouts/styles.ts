@@ -8,7 +8,7 @@ export const LayoutWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 `;
 
 export const ContentArea = styled.div<ContentAreaProps>`
@@ -20,6 +20,30 @@ export const ContentArea = styled.div<ContentAreaProps>`
   transition: margin-left 0.3s ease;
   box-sizing: border-box;
   width: 100%;
+  overflow-y: auto;
+
+  /* Custom Scrollbar */
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #7e22ce;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #6b21a8;
+  }
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #7e22ce #f1f1f1;
 
   @media (min-width: 701px) {
     margin-left: 220px;
@@ -29,13 +53,13 @@ export const ContentArea = styled.div<ContentAreaProps>`
 
   @media (max-width: 700px) {
     margin-left: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     width: 100%;
   }
 
   @media (max-width: 320px) {
     height: auto;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 0;
     width: 100%;
   }
 `;
