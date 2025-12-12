@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const UsersWrapper = styled.main`
-  max-width: 1150px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 1.5rem;
   font-family: sans-serif;

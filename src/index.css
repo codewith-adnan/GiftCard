@@ -20,20 +20,33 @@ body {
   border-radius: 8px;
 }
 
-/* ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #7e22ce;
   border-radius: 8px;
-} */
+}
 
 ::-webkit-scrollbar-thumb:hover {
   background: #6b21a8;
 }
 
 /* Firefox */
-/* * {
-  scrollbar-width: 4px;
+* {
+  scrollbar-width: thin;
   scrollbar-color: #7e22ce #f1f1f1;
-} */
+}
+
+/* Mobile Scrollbar - Force visibility */
+@media (max-width: 700px) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #7e22ce #f1f1f1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+    -webkit-appearance: none;
+  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

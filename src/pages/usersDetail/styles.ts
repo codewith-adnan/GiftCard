@@ -35,7 +35,7 @@ export const Breadcrumb = styled.nav`
       font-weight: 700;
   }
 `;
-export const Bread =styled.div`
+export const Bread = styled.div`
 
       color: #808D9E;
       font-size: 24px;
@@ -58,7 +58,7 @@ export const UserCard = styled.section`
   height: 80px;
   max-width: 60rem;
   @media (max-width: 320px) {
-    width:97%;
+    width:88%;
   }
 `;
 
@@ -192,9 +192,11 @@ export const FilterForm = styled.form`
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 97%;
+    width: 99%;
+    padding: 0.5rem;
     @media screen {
     flex-direction: row;
+
   }
   }
 
@@ -269,6 +271,9 @@ export const SearchInput = styled.input`
   padding: 0.5rem 0.75rem;
   font-size: 14px;
   color: #1c1c27;
+  @media screen and (max-width: 320px) {
+    width: 210px;
+  }
 `;
 
 export const BrandSelect = styled.select`
@@ -392,7 +397,7 @@ export const TableWrapper = styled.div`
   padding: 1rem;
   border-radius: 5px;
   @media (max-width: 320px) {
-    width: 98%;
+    width: 89%;
   }
 `;
 

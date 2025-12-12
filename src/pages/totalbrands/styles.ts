@@ -5,7 +5,7 @@ export const BrandWrapper = styled.div`
   font-family: sans-serif;
   color: #111827;
   padding: 1.5rem;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
 `;
 

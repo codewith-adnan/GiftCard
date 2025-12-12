@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const GiftWrapper = styled.div`
   min-height: 100vh;
   padding: 1.5rem;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
 `;

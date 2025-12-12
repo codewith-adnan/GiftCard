@@ -5,7 +5,7 @@ export const DashboardWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
   margin-top: 45px;
-  max-width: 1050px;
+  max-width: 1200px;
   height: auto;
 
   @media (min-width: 640px) {

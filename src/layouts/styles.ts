@@ -8,14 +8,14 @@ export const LayoutWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
 `;
 
 export const ContentArea = styled.div<ContentAreaProps>`
   margin-top: 35px;
   margin-left: 0;
   padding: 2rem;
-  height: calc(110vh - 35px);
+  height: calc(100vh - 35px);
   background-color: #f9f9f9;
   transition: margin-left 0.3s ease;
   box-sizing: border-box;
@@ -24,17 +24,17 @@ export const ContentArea = styled.div<ContentAreaProps>`
 
   /* Custom Scrollbar */
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 3px;
   }
 
   &::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
     background: #7e22ce;
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
@@ -55,11 +55,14 @@ export const ContentArea = styled.div<ContentAreaProps>`
     margin-left: 0;
     padding: 2rem 0;
     width: 100%;
+    height: calc(100vh - 35px);
+    overflow-y: auto;
   }
 
   @media (max-width: 320px) {
-    height: auto;
+    height: calc(100vh - 35px);
     padding: 1.5rem 0;
     width: 100%;
+    overflow-y: auto;
   }
 `;
