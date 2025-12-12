@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const DashboardWrapper = styled.div`
-  padding: 0;
+  padding: 0 0.5rem;
   width: 100%;
   margin: 0 auto;
   margin-top: 45px;
@@ -9,18 +9,19 @@ export const DashboardWrapper = styled.div`
   height: auto;
 
   @media (min-width: 640px) {
-    padding: 1.5rem;
+    padding: 0 1rem;
   }
 
   @media (min-width: 768px) {
-    padding: 2rem;
+    padding: 0 1.5rem;
   }
 
-  @media (max-width: 320px) {
-    padding: 1rem;
+  @media (max-width: 420px) {
+    padding: 0 0.5rem;
     margin-left: 0;
     margin-bottom: 2rem;
     height: auto;
+    max-width: 700px;
   }
 `;
 
@@ -35,8 +36,8 @@ export const DashboardTitle = styled.div`
   position: absolute;
   top: 90px;
 
-  @media (max-width: 480px) {
-    margin-bottom: 15px;
+  @media (max-width: 420px) {
+    margin-bottom: 100px;
   }
 `;
 
@@ -58,10 +59,10 @@ export const CardsGrid = styled.div`
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 420px) {
     margin-top: 15px;
     gap: 0.50rem;
-      max-width: 16.75rem;
+      max-width: 18.75rem;
 
   }
 `;
