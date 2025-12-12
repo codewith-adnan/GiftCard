@@ -4,13 +4,23 @@ export const Wrapper = styled.div`
   background-color: #f9fafb;
   font-family: 'Inter', sans-serif;
   color: black;
-  max-width: 100rem;
+  max-width: 1200px;
   margin: 1rem auto 0 auto;
   padding: 1rem;
   margin-left: 15px;
+  overflow-x: hidden;
+  
+  @media (max-width: 700px) {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.5rem;
+    overflow-x: hidden;
+  }
+  
   @media (max-width: 320px) {
-    width: 96%;
-    margin-left: 3px;
+    width: 100%;
+    margin-left: 0;
+    padding: 0.5rem;
   }
 `;
 
@@ -41,11 +51,18 @@ export const EditButton = styled.button`
   height: 46px;
   padding: 0.5rem 1.25rem;
   border-radius: 0.375rem;
+  
+  @media (max-width: 700px) {
+    width: 140px;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+  
   @media (max-width: 320px) {
-    padding: 0.75rem;
-    width: 100px;
-    justify-content: flex-end;
-margin-left    :10rem ;
+    width: 120px;
+    height: 40px;
+    padding: 0.5rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -53,6 +70,15 @@ export const Section = styled.section`
   background: white;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  overflow-x: hidden;
+  
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
+  
+  @media (max-width: 320px) {
+    padding: 0.75rem;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -157,10 +183,17 @@ export const Input = styled.input`
   height: 36px;
   padding: 0.5rem 0.75rem;
   width: 100%;
+  box-sizing: border-box;
   cursor: pointer;
+  
+  @media (max-width: 700px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  
   @media (max-width: 320px) {
     width: 100%;
-    margin-left: -0.75rem;
+    margin-left: 0;
   }
 `;
 
@@ -177,13 +210,18 @@ export const UpdateButton = styled.button`
   border-radius: 0.375rem;
   margin: 2rem auto 0 auto;
   display: block;
+  cursor: pointer;
 
-  @media (max-width: 320px) {
-    padding: 0.50rem;
-    width: 8rem;
-    margin: 1rem auto 0 auto;
-    margin-right: -0.75rem;
+  @media (max-width: 700px) {
+    max-width: 180px;
+    padding: 0.75rem;
+    margin: 1.5rem auto 0 auto;
   }
 
-  cursor: pointer;
+  @media (max-width: 320px) {
+    padding: 0.5rem;
+    max-width: 150px;
+    height: 40px;
+    margin: 1rem auto 0 auto;
+  }
 `;
