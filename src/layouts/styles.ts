@@ -7,7 +7,7 @@ interface ContentAreaProps {
 export const LayoutWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
 `;
 
@@ -22,14 +22,14 @@ export const ContentArea = styled.div<ContentAreaProps>`
   width: 100%;
 
   @media (min-width: 701px) {
-    margin-left: 200px;
-    padding: 2rem 2rem 2rem 2rem;
-    width: calc(100% - 200px);
+    margin-left: 220px;
+    padding: 2rem;
+    width: calc(100% - 220px);
   }
 
   @media (max-width: 700px) {
     margin-left: 0;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     width: 100%;
   }
 
