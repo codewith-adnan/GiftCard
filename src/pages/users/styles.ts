@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const UsersWrapper = styled.main`
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1rem;
   font-family: sans-serif;
   color: #000;
 `;
