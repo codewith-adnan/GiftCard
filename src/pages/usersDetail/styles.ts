@@ -4,15 +4,7 @@ export const Wrapper = styled.div`
   background-color: #f9fafb;
   color: #111827;
   min-height: 100vh;
-  padding: 1rem;
-
-  @media (min-width: 640px) {
-    padding: 1.5rem;
-  }
-
-  @media (min-width: 768px) {
-    padding: 2.5rem;
-  }
+  padding: 0;
 `;
 
 export const Breadcrumb = styled.nav`

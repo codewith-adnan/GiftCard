@@ -31,7 +31,7 @@ export const DashboardTitle = styled.div`
   font-weight: 700;
   font-size: 24px;
   line-height: 22px;
-  text-align: center;
+  text-align: left;
   color: #252D31;
   margin-bottom: 2rem;
   /* Removed absolute positioning */
