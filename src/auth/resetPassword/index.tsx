@@ -1,5 +1,5 @@
 import React from "react";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   Container,
@@ -21,7 +21,7 @@ import {
   ResetBackLink,
 } from "./styles";
 
-import { FaRegEnvelope } from "react-icons/fa"; 
+import { FaRegEnvelope } from "react-icons/fa";
 
 import Image from "../../assets/images/formimages/Image.jpg";
 import Logo from "../../assets/images/formimages/Logo.png";
@@ -50,7 +50,6 @@ const ResetPassword: React.FC = () => {
             Enter the email address associated with your account and we will
             send you a link to reset your password.
           </ResetSubText>
-
           <ResetForm>
             <ResetInputWrapper>
               <ResetIcon>
@@ -58,14 +57,11 @@ const ResetPassword: React.FC = () => {
               </ResetIcon>
               <ResetInput
                 type="email"
-                placeholder="Angela.lau"
-              />
+                placeholder="Angela.lau" />
             </ResetInputWrapper>
-
-            <ResetSubmitButton type="submit" onClick={()=>navigate("/auth/checkEmail")} >Continue</ResetSubmitButton>
+            <ResetSubmitButton type="submit" onClick={() => navigate("/auth/checkEmail")} >Continue</ResetSubmitButton>
           </ResetForm>
-
-          <ResetBackLink onClick={()=>navigate("/auth/login")} >Back to Sign In</ResetBackLink>
+          <ResetBackLink onClick={() => navigate("/auth/login")} >Back to Sign In</ResetBackLink>
         </ResetWrapper>
       </FormSection>
     </Container>
