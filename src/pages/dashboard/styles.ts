@@ -33,11 +33,11 @@ export const DashboardTitle = styled.div`
   line-height: 22px;
   text-align: center;
   color: #252D31;
-  position: absolute;
-  top: 90px;
+  margin-bottom: 2rem;
+  /* Removed absolute positioning */
 
   @media (max-width: 420px) {
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
   }
 `;
 

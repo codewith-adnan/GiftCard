@@ -3,20 +3,18 @@ import styled from "styled-components";
 export const UsersWrapper = styled.main`
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 0;
   font-family: sans-serif;
   color: #000;
-  
-  
 `;
 
 export const Header = styled.h3`
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: #252D31;
   font-style: bold;
-  
+  text-align: center;
 `;
 
 export const SearchForm = styled.form`
