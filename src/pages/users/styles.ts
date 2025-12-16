@@ -11,10 +11,11 @@ export const UsersWrapper = styled.main`
 export const Header = styled.h3`
   font-weight: 700;
   font-size: 24px;
+  margin-top:2rem;
   margin-bottom: 2rem;
   color: #252D31;
   font-style: bold;
-  text-align: center;
+  text-align: left;
 `;
 
 export const SearchForm = styled.form`

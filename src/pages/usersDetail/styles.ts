@@ -4,7 +4,10 @@ export const Wrapper = styled.div`
   background-color: #f9fafb;
   color: #111827;
   min-height: 100vh;
-  padding: 0;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 export const Breadcrumb = styled.nav`
@@ -12,6 +15,7 @@ export const Breadcrumb = styled.nav`
   color: #808D9E;
   margin-bottom: 1.5rem;
   user-select: none;
+  margin-top: 2rem;
   display: flex;
   gap: 0.5rem;
   @media (max-width: 320px) {
@@ -48,7 +52,7 @@ export const UserCard = styled.section`
   align-items: center;
   gap: 1rem;
   height: 80px;
-  max-width: 60rem;
+  
   @media (max-width: 320px) {
     width:88%;
   }
