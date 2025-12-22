@@ -48,7 +48,7 @@ export const ContentArea = styled.div<ContentAreaProps>`
   @media (min-width: 701px) {
     margin-left: 220px;
     padding: 2rem;
-    width: calc(100% - 220px);
+    width: auto;
   }
 
   @media (max-width: 700px) {

@@ -160,7 +160,7 @@ export const ChartTitle = styled.h2`
   font-size: 1rem;
   font-weight: 600;
   color: #252D31;
-  margin-left: -4px;
+  line-height: 150%;
   line-height: 150%;
 `;
 export const DateRangeWrapper = styled.label`
@@ -312,7 +312,7 @@ export const DateInput = styled.div`
 
 // RESPONSIVE CONTAINER
 export const ResponsiveContainer = styled.div`
-  margin-left: -4px;
+  max-width: 930px;
   max-width: 930px;
 `;
 
