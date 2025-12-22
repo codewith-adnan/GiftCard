@@ -32,7 +32,7 @@ export const Overlay = styled.div`
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 `;

@@ -58,7 +58,6 @@ export const FilterForm = styled.form`
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 97%;
     @media screen {
     flex-direction: row;
   }
@@ -127,7 +126,7 @@ export const FilterForm = styled.form`
   }
 `;
 
- 
+
 
 
 export const TableWrapper = styled.div`
@@ -135,9 +134,6 @@ export const TableWrapper = styled.div`
   background: white;
   padding: 1rem;
   border-radius: 5px;
-  @media screen {
-    width: 97%;
-  }
 `;
 
 export const TableStyled = styled.table`
