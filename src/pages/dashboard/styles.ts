@@ -171,7 +171,7 @@ export const DateRangeWrapper = styled.label`
   border-radius: 8px;
   overflow: hidden;
   padding: 0;
-        margin-right: -30rem;
+  padding: 0;
 
   font-family: 'Plus Jakarta Sans', sans-serif;
   cursor: pointer;

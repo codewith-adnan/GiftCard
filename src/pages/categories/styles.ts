@@ -7,11 +7,8 @@ export const Container = styled.div`
   max-width: 1200px;
   margin: auto;
   width: 100%;
-  margin-left: 8px;
+  width: 100%;
   font-family: 'Inter', sans-serif;
-  @media (max-width: 320px) {
-    margin-left: -6px;
-  }
 `;
 
 export const Header = styled.div`
@@ -72,7 +69,7 @@ export const SearchForm = styled.form`
   @media (max-width: 320px) {
     /* flex-direction: column; */
     padding: 0.50rem;
-    width: 93%;
+    width: 100%;
         margin-top: 10px;
 
   }
@@ -101,7 +98,7 @@ export const SearchInput = styled.input`
   }
 
   @media (max-width: 320px) {
-    max-width: 95%;
+    max-width: 100%;
     padding: 0.50rem;
     height: 19px;
   }

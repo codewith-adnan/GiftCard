@@ -54,7 +54,7 @@ export const UserCard = styled.section`
   height: 80px;
   
   @media (max-width: 320px) {
-    width:88%;
+    width: 100%;
   }
 `;
 
@@ -188,7 +188,7 @@ export const FilterForm = styled.form`
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 99%;
+    width: 100%;
     padding: 0.5rem;
     @media screen {
     flex-direction: row;
@@ -393,7 +393,7 @@ export const TableWrapper = styled.div`
   padding: 1rem;
   border-radius: 5px;
   @media (max-width: 320px) {
-    width: 89%;
+    width: 100%;
   }
 `;
 
